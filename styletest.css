@@ -4,6 +4,7 @@ body {
 	overflow-x: hidden;
 	overflow-y: hidden;
 	background-color: white;
+	margin-left: 50%;
 }
 
 .container {
