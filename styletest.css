@@ -21,15 +21,11 @@ body {
 }
 
 .textSpike {
-	margin-top: 10%;
+	margin-top: 30%;
 	width: 200px;
 	text-align: center;
 	border-radius: 50px;
 	transition: .1s;
-}
-
-.textSpike:hover {
-	background-color: lime;
 }
 
 #LVL {
@@ -37,10 +33,6 @@ body {
 	text-align: center;
 	border-radius: 50px;
 	transition: .1s;
-}
-
-#LVL:hover {
-	background-color: lime;
 }
 
 #but {
