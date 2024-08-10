@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	const textCoin = document.getElementById("textCoin");
 	const resetBut = document.getElementById("resetBut");
 	const boostBut = document.getElementById("boostBut");
-	const themeBut = document.getElementById("themeBut");
+	const themeBut = document.getElementById("boostInfoBut");
 	const textLvl = document.getElementById("LVL");
 
 	let coin = localStorage.getItem("Coins");
@@ -64,21 +64,20 @@ document.addEventListener("DOMContentLoaded", function(){
 	but.addEventListener("click", addCoin);
 
 	resetBut.addEventListener("click", function(){
-		coin = 0;
-		localStorage.setItem("Coins", coin);
-		textCoin.innerHTML = coin;
-		skin();
+		let reset = confirm("Вы точно хотите сбросить SpikeCoins?")
+		if(reset==true){
+			coin = 0;
+			localStorage.setItem("Coins", coin);
+			textCoin.innerHTML = coin;
+			skin();
+		}
 	})
 
 	boostBut.addEventListener("click", function(){
-
+		
 	})
 
-	themeBut.addEventListener("click", function(){
-		if(theme == 0){
-			body.style.background = "black";
-			body.style.color = "white";
-			theme == 1;
-		}
+	boostInfoBut.addEventListener("click", function(){
+		
 	})
 })
